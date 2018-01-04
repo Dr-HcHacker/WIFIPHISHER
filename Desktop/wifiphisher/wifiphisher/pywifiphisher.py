@@ -257,6 +257,7 @@ class WifiphisherEngine:
             os.remove('/tmp/wifiphisher-webserver.tmp')
 
         print '[' + R + '!' + W + '] Closing'
+        os.system("NetworkManager")
         sys.exit(0)
 
     def try_change_mac(self, iface_name, mac_address=None):
